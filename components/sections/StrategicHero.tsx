@@ -96,9 +96,22 @@ export default function StrategicHero() {
                   whileTap={{ scale: 0.95 }}
                   className="p-4 rounded-xl border-2 transition-all duration-200 flex flex-col items-center text-center min-h-[140px] justify-center border-white/30 bg-gray-800/90 hover:bg-gray-700/90 hover:border-[#8243f9] relative z-10"
                 >
-                  <div className="text-2xl mb-2">
-                    {subnicho.icon}
-                  </div>
+                  <motion.div 
+                    className="text-2xl mb-2 transition-all duration-300 relative group"
+                    whileHover={{ 
+                      scale: 1.3,
+                      rotate: [0, -10, 10, -10, 0],
+                      transition: { duration: 0.6 }
+                    }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <div className="relative">
+                      {subnicho.icon}
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm">
+                        {subnicho.icon}
+                      </div>
+                    </div>
+                  </motion.div>
                   <h3 className="text-white font-semibold mb-1 text-sm">
                     {subnicho.name}
                   </h3>

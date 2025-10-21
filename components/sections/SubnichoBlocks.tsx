@@ -200,9 +200,42 @@ export default function SubnichoBlocks() {
             >
               {/* Subnicho Header */}
               <div className="text-center mb-12">
-                <div className="text-6xl mb-4">
-                  {subnicho.icon}
-                </div>
+                <motion.div 
+                  className="text-6xl mb-4 inline-block cursor-pointer relative group"
+                  whileHover={{ 
+                    scale: 1.2,
+                    rotate: [0, -5, 5, -5, 0],
+                    transition: { duration: 0.8, ease: "easeInOut" }
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ 
+                    scale: 1, 
+                    opacity: 1,
+                    transition: { duration: 0.6, delay: index * 0.1 }
+                  }}
+                  viewport={{ once: true }}
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    transition: {
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }
+                  }}
+                >
+                  <div className="relative">
+                    {subnicho.icon}
+                    {/* Efecto de brillo en hover */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm scale-110">
+                      {subnicho.icon}
+                    </div>
+                    {/* Efecto de sombra dinámica */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-60 transition-all duration-300 blur-md scale-125 -z-10">
+                      {subnicho.icon}
+                    </div>
+                  </div>
+                </motion.div>
                 <h3 className="text-3xl font-bold text-white mb-2">
                   {subnicho.title}
                 </h3>
