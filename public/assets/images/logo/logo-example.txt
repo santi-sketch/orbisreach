@@ -25,3 +25,4 @@ Para que tu logo aparezca automáticamente en la página, coloca tus archivos aq
 El sistema actualmente muestra el icono Brain como fallback hasta que añadas tu logo real.
 
 
+
