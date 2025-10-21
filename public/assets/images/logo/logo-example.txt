@@ -1,0 +1,27 @@
+# Ejemplo de estructura de archivos de logo
+
+Para que tu logo aparezca automáticamente en la página, coloca tus archivos aquí:
+
+## Archivos requeridos:
+- logo.png (logo principal)
+
+## Archivos opcionales:
+- logo-white.png (versión blanca para fondos oscuros)
+- logo-dark.png (versión oscura para fondos claros)
+- favicon.ico (icono del navegador)
+
+## Especificaciones técnicas:
+- Formato: PNG (recomendado) o SVG
+- Tamaño: 200x60px para el header
+- Fondo: Transparente (PNG) o sólido
+- Resolución: 72-150 DPI
+
+## Una vez que añadas tu logo:
+1. Coloca el archivo logo.png en esta carpeta
+2. La página lo detectará automáticamente
+3. Si tienes versiones blanca/oscura, también se usarán
+
+## Nota:
+El sistema actualmente muestra el icono Brain como fallback hasta que añadas tu logo real.
+
+

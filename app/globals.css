@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes twinkleSlow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes twinkleFast {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.animate-twinkle-slow {
+  animation: twinkleSlow 3s ease-in-out infinite;
+}
+
+.animate-twinkle-fast {
+  animation: twinkleFast 1.5s ease-in-out infinite;
+}
