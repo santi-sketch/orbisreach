@@ -14,7 +14,7 @@ Crea un archivo `.env.local` en la raíz del proyecto:
 
 ```env
 # OpenAI API Key (REQUERIDO)
-OPENAI_API_KEY=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
+OPENAI_API_KEY=tu_clave_openai_aqui
 # Supabase (opcional)
 NEXT_PUBLIC_SUPABASE_URL=https://jabrxdocwvjhyizgmljd.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImphYnJ4ZG9jd3ZqaHlpemdtbGpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4Mjc0MjQsImV4cCI6MjA3NjQwMzQyNH0.Uksb056UyqJV1doCE2c_KcXDvnZkrh1s7jNTBEMgE5o
